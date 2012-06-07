@@ -12,14 +12,22 @@ gem 'rails', '3.2.3'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platform => :ruby
-
+  gem 'compass-rails'
   gem 'uglifier', '>= 1.0.3'
+# gem 'zurb-foundation'
 end
 
 gem 'jquery-rails'
+gem "rspec-rails", ">= 2.10.1", :group => [:development, :test]
+gem "database_cleaner", ">= 0.7.2", :group => :test
+gem "mongoid-rspec", ">= 1.4.4", :group => :test
+gem "factory_girl_rails", ">= 3.3.0", :group => [:development, :test]
+gem "cucumber-rails", ">= 1.3.0", :group => :test
+gem "capybara", ">= 1.1.2", :group => :test
+gem "launchy", ">= 2.1.0", :group => :test
+gem "bson_ext", ">= 1.6.2"
+gem "mongoid", ">= 2.4.10"
+gem "devise", ">= 2.1.0"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
